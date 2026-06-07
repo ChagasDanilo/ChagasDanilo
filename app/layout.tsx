@@ -15,6 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Danilo Chagas Amorim — Software Engineer",
   description: "Portfolio de Danilo Chagas Amorim, Software Engineer especialista em React Native, TypeScript e desenvolvimento mobile.",
+  icons: {
+    icon: '/icon.svg',
+  },
+  openGraph: {
+    title: "Danilo Chagas Amorim — Software Engineer",
+    description: "Mobile & Full Stack Developer. Especialista em React Native, TypeScript e arquitetura limpa.",
+    type: "website",
+    locale: "pt_BR",
+  },
 };
 
 export default function RootLayout({

@@ -181,6 +181,9 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
       { name: 'Maestro', level: 'advanced', category: 'tools' },
       { name: 'Jest / Testing Library', level: 'advanced', category: 'tools' },
       { name: 'Vitest', level: 'advanced', category: 'tools' },
+      { name: 'Google Analytics', level: 'advanced', category: 'tools' },
+      { name: 'Google Play', level: 'advanced', category: 'tools' },
+      { name: 'App Store', level: 'advanced', category: 'tools' },
       
       { name: 'Delphi', level: 'advanced', category: 'legacy' },
       { name: 'Sybase', level: 'advanced', category: 'legacy' },
@@ -192,6 +195,7 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
       { name: 'TDD', level: 'advanced', category: 'architecture' },
 
       { name: 'GCP', level: 'intermediate', category: 'cloud' },
+      { name: 'Firebase', level: 'advanced', category: 'cloud' },
       { name: 'Vercel', level: 'advanced', category: 'cloud' },
       { name: 'Supabase', level: 'advanced', category: 'cloud' },
       { name: 'Digital Ocean', level: 'advanced', category: 'cloud' },
@@ -199,7 +203,6 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
       
       { name: 'GitHub Actions', level: 'advanced', category: 'cicd' },
       { name: 'EAS Workflows', level: 'advanced', category: 'cicd' },
-      { name: 'Vercel', level: 'advanced', category: 'cicd' },
     ];
   }
 

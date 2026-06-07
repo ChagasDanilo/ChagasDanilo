@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { Logo } from '@/src/presentation/components/ui/Logo';
 
 const LINKS = [
   { href: '#about', label: 'Sobre' },
@@ -44,9 +45,9 @@ export function Navbar() {
       <nav className="relative max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="text-white font-bold font-mono text-sm tracking-wider cursor-pointer"
+          className="cursor-pointer"
         >
-          DC<span className="text-violet-400">.</span>
+          <Logo />
         </button>
         <ul className="hidden md:flex items-center gap-6">
           {LINKS.map((link) => {

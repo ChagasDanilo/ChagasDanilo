@@ -20,7 +20,7 @@ export function ContactSection({ profile }: Props) {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          // contato
+          {'// contato'}
         </motion.p>
         <motion.h2
           className="text-4xl sm:text-5xl font-bold text-white mb-6"

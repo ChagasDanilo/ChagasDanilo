@@ -29,8 +29,10 @@ function TypewriterText({ texts }: { texts: string[] }) {
     } else if (deleting && displayed.length > 0) {
       timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 40);
     } else {
-      setDeleting(false);
-      setIndex((i) => i + 1);
+      timeout = setTimeout(() => {
+        setDeleting(false);
+        setIndex((i) => i + 1);
+      }, 0);
     }
 
     return () => clearTimeout(timeout);
