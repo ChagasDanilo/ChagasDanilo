@@ -1,65 +1,29 @@
-import Image from "next/image";
+import { StaticPortfolioRepository } from '@/src/infrastructure/repositories/StaticPortfolioRepository';
+import { GetPortfolioDataUseCase } from '@/src/application/use-cases/GetPortfolioDataUseCase';
+import { Navbar } from '@/src/presentation/components/features/navbar/Navbar';
+import { HeroSection } from '@/src/presentation/components/features/hero/HeroSection';
+import { AboutSection } from '@/src/presentation/components/features/about/AboutSection';
+import { SkillsSection } from '@/src/presentation/components/features/skills/SkillsSection';
+import { ExperienceSection } from '@/src/presentation/components/features/experience/ExperienceSection';
+import { ProjectsSection } from '@/src/presentation/components/features/projects/ProjectsSection';
+import { CertificatesSection } from '@/src/presentation/components/features/certificates/CertificatesSection';
+import { ContactSection } from '@/src/presentation/components/features/contact/ContactSection';
 
 export default function Home() {
+  const repository = new StaticPortfolioRepository();
+  const useCase = new GetPortfolioDataUseCase(repository);
+  const data = useCase.execute();
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="bg-[#0a0a0a] min-h-screen">
+      <Navbar />
+      <HeroSection profile={data.profile} />
+      <AboutSection profile={data.profile} />
+      <SkillsSection skills={data.skills} />
+      <ExperienceSection experiences={data.experiences} />
+      <ProjectsSection projects={data.projects} />
+      <CertificatesSection certificates={data.certificates} />
+      <ContactSection profile={data.profile} />
+    </main>
   );
 }
