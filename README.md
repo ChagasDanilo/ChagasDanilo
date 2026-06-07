@@ -1,67 +1,66 @@
+<div align="center">
+
 # Danilo Chagas Amorim
 
-**Software Engineer — Mobile & Full Stack**  
-Goiás, Brasil · [LinkedIn](https://www.linkedin.com/in/danilo-chagas-amorim/) · [danilochagas009@gmail.com](mailto:danilochagas009@gmail.com)
+**Senior Software Engineer · Mobile & Full Stack**
+
+<a href="https://www.linkedin.com/in/danilo-chagas-amorim/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+&nbsp;
+<a href="mailto:danilochagas009@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
+&nbsp;
+<a href="https://danilochagas.com"><img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white" /></a>
+
+📍 Goiás, Brasil &nbsp;·&nbsp; 🏢 MoveEdu
+
+</div>
 
 ---
 
-Especialista em React Native com foco em criar experiências mobile de alta performance. Construo aplicações que unem design refinado e arquitetura sólida — do app ao backend.
-
-Atualmente na **MoveEdu**, desenvolvendo e arquitetando apps publicados nas lojas com centenas de milhares de usuários.
+Especialista em **React Native** com foco em criar experiências mobile de alta performance. Construo aplicações que unem design refinado e arquitetura sólida — do app ao backend.
 
 ---
 
 ## Stack
 
-**Mobile**  
-React Native · Expo · TypeScript · EAS
+**Mobile**
 
-**Frontend**  
-React · Next.js · Tailwind CSS
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![EAS](https://img.shields.io/badge/EAS-000020?style=flat-square&logo=expo&logoColor=white)
 
-**Backend**  
-Node.js · NestJS · Fastify · PostgreSQL · REST APIs
+**Frontend**
 
-**Cloud & Deploy**  
-Digital Ocean · Supabase · GCP · AWS · Vercel · GitHub Actions · EAS Workflows
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-**Arquitetura**  
-Clean Architecture · SOLID · TDD · MVVM
+**Backend**
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
+![Fastify](https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=fastify&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+
+**Cloud & Deploy**
+
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Digital Ocean](https://img.shields.io/badge/DigitalOcean-0080FF?style=flat-square&logo=digitalocean&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 ---
 
 ## Apps publicados
 
 | App | Google Play | App Store |
-|-----|-------------|-----------|
-| MoveEdu Conecta | [Play](https://play.google.com/store/apps/details?id=com.moveedu.moveapp) | [Store](https://apps.apple.com/us/app/moveedu-conecta/id6746497211) |
-| Ensina Mais | [Play](https://play.google.com/store/apps/details?id=com.moveedu.appensinapais) | [Store](https://apps.apple.com/br/app/ensina-mais/id6737055451) |
-| Prepara IA | [Play](https://play.google.com/store/apps/details?id=com.moveedu.prepara) | [Store](https://apps.apple.com/us/app/prepara-ia/id6502964269) |
-| Microlins | [Play](https://play.google.com/store/apps/details?id=com.moveedu.microlins) | [Store](https://apps.apple.com/us/app/microlins/id6503015878) |
-| ServeLar | [Play](https://play.google.com/store/apps/details?id=com.servelarclub.servelar) | — |
+|-----|:-----------:|:---------:|
+| **MoveEdu Conecta** | [▶ Play](https://play.google.com/store/apps/details?id=com.moveedu.moveapp) | [ Store](https://apps.apple.com/us/app/moveedu-conecta/id6746497211) |
+| **Ensina Mais** | [▶ Play](https://play.google.com/store/apps/details?id=com.moveedu.appensinapais) | [ Store](https://apps.apple.com/br/app/ensina-mais/id6737055451) |
+| **Prepara IA** | [▶ Play](https://play.google.com/store/apps/details?id=com.moveedu.prepara) | [ Store](https://apps.apple.com/us/app/prepara-ia/id6502964269) |
+| **Microlins** | [▶ Play](https://play.google.com/store/apps/details?id=com.moveedu.microlins) | [ Store](https://apps.apple.com/us/app/microlins/id6503015878) |
+| **ServeLar** | [▶ Play](https://play.google.com/store/apps/details?id=com.servelarclub.servelar) | — |
 
----
-
-## Este repositório
-
-Portfolio pessoal construído com arquitetura limpa, animações fluidas e design dark.
-
-**Tech:** Next.js 16 · TypeScript · Tailwind CSS v4 · Framer Motion · Clean Architecture
-
-```bash
-pnpm dev      # http://localhost:3000
-pnpm build    # production build
-pnpm lint     # ESLint
-```
-
-### Arquitetura
-
-```
-src/
-  domain/          # entidades, value objects, interfaces de repositório
-  application/     # use cases, DTOs, ports
-  infrastructure/  # repositórios concretos, adapters HTTP
-  presentation/    # Next.js App Router, componentes React, hooks
-```
-
-Dependências fluem estritamente para dentro: `Presentation → Application → Domain ← Infrastructure`
