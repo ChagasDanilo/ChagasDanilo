@@ -28,7 +28,7 @@ export function CertificatesSection({ certificates }: Props) {
             <Award size={14} className="text-violet-400 shrink-0" />
             <div>
               <p className="text-zinc-200 text-sm font-medium leading-none">{cert.name}</p>
-              <p className="text-zinc-600 text-xs mt-0.5">{cert.issuer} · {cert.year}</p>
+              <p className="text-zinc-400 text-xs mt-0.5">{cert.issuer} · {cert.year}</p>
             </div>
           </motion.div>
         ))}

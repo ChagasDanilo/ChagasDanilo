@@ -42,24 +42,33 @@ export function Navbar() {
         style={{ opacity: bgOpacity }}
       />
       <nav className="relative max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="text-white font-bold font-mono text-sm tracking-wider">
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="text-white font-bold font-mono text-sm tracking-wider cursor-pointer"
+        >
           DC<span className="text-violet-400">.</span>
-        </a>
+        </button>
         <ul className="hidden md:flex items-center gap-6">
-          {LINKS.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className={`text-sm transition-colors duration-200 ${
-                  active === link.href.replace('#', '')
-                    ? 'text-violet-400'
-                    : 'text-zinc-500 hover:text-zinc-200'
-                }`}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
+          {LINKS.map((link) => {
+            const id = link.href.replace('#', '');
+            return (
+              <li key={link.href}>
+                <button
+                  onClick={() => {
+                    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+                    history.replaceState(null, '', link.href);
+                  }}
+                  className={`text-sm transition-colors duration-200 cursor-pointer ${
+                    active === id
+                      ? 'text-violet-400'
+                      : 'text-zinc-500 hover:text-zinc-200'
+                  }`}
+                >
+                  {link.label}
+                </button>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </motion.header>

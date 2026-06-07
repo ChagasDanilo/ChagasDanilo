@@ -22,6 +22,10 @@ const CATEGORY_LABEL: Record<Skill['category'], string> = {
   frontend: 'Front-end',
   backend: 'Back-end',
   tools: 'Ferramentas',
+  architecture: 'Arquitetura',
+  cloud: 'Cloud',
+  cicd: 'CI/CD & Deploy',
+  legacy: 'Legacy',
 };
 
 interface Props {
@@ -29,7 +33,7 @@ interface Props {
 }
 
 export function SkillsSection({ skills }: Props) {
-  const categories: Skill['category'][] = ['mobile', 'frontend', 'backend', 'tools'];
+  const categories: Skill['category'][] = ['mobile', 'frontend', 'backend', 'tools', 'architecture', 'cloud', 'cicd', 'legacy'];
 
   return (
     <SectionWrapper id="skills" className="bg-[#0d0d0d]">

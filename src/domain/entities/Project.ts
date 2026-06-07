@@ -3,7 +3,9 @@ export interface Project {
   name: string;
   description: string;
   techStack: string[];
-  url: string;
+  url?: string;
   repoUrl?: string;
+  androidUrl?: string;
+  iosUrl?: string;
   featured: boolean;
 }
