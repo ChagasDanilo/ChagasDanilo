@@ -42,7 +42,7 @@ export function AboutSection({ profile }: Props) {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <p className="text-zinc-300 text-lg leading-relaxed mb-6">{profile.bio}</p>
+          <p className="text-zinc-300 text-lg leading-relaxed mb-6 whitespace-pre-line">{profile.bio}</p>
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2 text-zinc-400 text-sm">
               <MapPin size={16} className="text-violet-400" />

@@ -22,7 +22,7 @@ export default function Home() {
       <SkillsSection skills={data.skills} />
       <ExperienceSection experiences={data.experiences} />
       <ProjectsSection projects={data.projects} />
-      <CertificatesSection certificates={data.certificates} />
+      <CertificatesSection certificates={data.certificates} education={data.education} />
       <ContactSection profile={data.profile} />
     </main>
   );

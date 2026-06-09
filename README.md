@@ -16,7 +16,11 @@
 
 ---
 
-Especialista em **React Native** com foco em criar experiências mobile de alta performance. Construo aplicações que unem design refinado e arquitetura sólida — do app ao backend.
+**Único responsável** pela frente mobile de uma rede de franquias educacionais: **4 apps publicados**, dezenas de milhares de usuários ativos e crash-free rate consistentemente acima de 99%.
+<br>Minha base veio do Delphi e de sistemas legados onde aprendi o valor de arquitetura sólida e hoje está no ecossistema React Native/Expo no front-end e Node.js/NestJS no back-end.
+Atuo no ciclo completo do produto: do levantamento de requisitos com stakeholders à publicação nas lojas, passando por estratégia de testes (Jest, Maestro), CI/CD (EAS Workflows) e observabilidade (Sentry, Crashlytics). Gosto de transformar processo em resultado como quando levei o ciclo de release de dias para horas, ou quando introduzi Spec-Driven Development e reduzi drasticamente o retrabalho da equipe.
+<br>Acredito que bom código é o que resolve problema real: já construí de app educacional de alta performance a integração segura com equipamentos médicos.
+
 
 ---
 

@@ -4,6 +4,7 @@ import type { Project } from '@/src/domain/entities/Project';
 import type { Experience } from '@/src/domain/entities/Experience';
 import type { Skill } from '@/src/domain/entities/Skill';
 import type { Certificate } from '@/src/domain/entities/Certificate';
+import type { Education } from '@/src/domain/entities/Education';
 
 export class StaticPortfolioRepository implements IPortfolioRepository {
   getProfile(): Profile {
@@ -11,7 +12,10 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
       name: 'Danilo Chagas Amorim',
       title: 'Software Engineer',
       subtitle: 'Mobile & Full Stack Developer',
-      bio: 'Especialista em React Native com foco em criar experiências mobile de alta performance. Construo aplicações que unem design refinado e arquitetura sólida — do app ao backend.',
+      bio: `Engenheiro Mobile/Full Stack Sênior. Único responsável pela frente mobile de uma rede de franquias educacionais: 4 apps publicados, dezenas de milhares de usuários ativos e crash-free rate consistentemente acima de 99%.
+        Minha base veio do Delphi e de sistemas legados onde aprendi o valor de arquitetura sólida e hoje está no ecossistema React Native/Expo no front-end e Node.js/NestJS no back-end.
+        Atuo no ciclo completo do produto: do levantamento de requisitos com stakeholders à publicação nas lojas, passando por estratégia de testes (Jest, Maestro), CI/CD (EAS Workflows) e observabilidade (Sentry, Crashlytics). Gosto de transformar processo em resultado como quando levei o ciclo de release de dias para horas, ou quando introduzi Spec-Driven Development e reduzi drasticamente o retrabalho da equipe.
+        Acredito que bom código é o que resolve problema real: já construí de app educacional de alta performance a integração segura com equipamentos médicos.`,
       avatarUrl: 'https://avatars.githubusercontent.com/u/38306914?v=4',
       location: 'Goiás — Brasil',
       company: 'MoveEdu',
@@ -118,30 +122,33 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
       {
         id: 'moveedu',
         company: 'MoveEdu',
-        role: 'Software Engineer — Mobile',
-        period: 'jan 2023 — atual',
+        role: 'Mobile & Full Stack Developer',
+        period: 'jan 2023 — presente',
         description: [
-          'Desenvolvimento e manutenção do app mobile em React Native',
-          'Arquitetura de features com Clean Architecture e padrões SOLID',
-          'Integração com APIs RESTful e serviços de terceiros',
-          'Code review e mentoria de desenvolvedores júnior',
+          'Único responsável pela frente mobile da empresa: desenvolvo e mantenho 4 aplicativos (alunos e gestão de franquias) utilizados por 30 mil usuários ativos.',
+          'Estruturei a estratégia de testes com Jest, React Testing Library e Maestro integrados ao CI (EAS Workflows), cobrindo fluxos críticos (login, financeiro, contratos) e reduzindo bugs em produção e horas de teste manual por release.',
+          'Estruturei o pipeline de publicação contínua (EAS Workflows) para Google Play e App Store, reduzindo o ciclo de release de 2 dias para 4 horas, com 95% das releases publicadas sem rollback.',
+          'Instrumentei eventos no Google Analytics que orientaram decisões de produto — ex.: redesign da tela de login que eliminou erros de navegação dos usuários.',
+          'Estruturei a stack de observabilidade (Sentry, Crashlytics, Google Analytics), elevando o crash-free rate de 80% para 99%+.',
+          'Introduzi Spec-Driven Development na equipe, definindo especificações formais antes da implementação, reduzindo retrabalho em 70% e alinhando expectativas entre produto e engenharia.',
+          'Desenvolvi APIs BFF em Node.js/NestJS aplicando Clean Architecture e princípios SOLID.',
         ],
-        techStack: ['React Native', 'Expo', 'TypeScript', 'Node.js', 'React'],
+        techStack: ['React Native', 'Expo', 'TypeScript', 'NestJS', 'Node.js', 'EAS', 'Sentry', 'Jest', 'Maestro'],
         current: true,
       },
       {
         id: 'freelance',
-        company: 'Freelance',
-        role: 'Desenvolvedor Mobile & Full Stack',
-        period: 'mar 2020 — dez 2022',
+        company: 'Autônomo',
+        role: 'Full Stack Developer',
+        period: 'mar 2020 — jan 2023',
         description: [
-          'Ciclo completo de desenvolvimento: levantamento de requisitos, arquitetura, entrega e publicação nas lojas (Google Play e App Store)',
-          'Gestão de Benefícios Pet: app com autenticação, módulos de pagamento/assinatura e monitoramento ativo de falhas',
-          'Integração de Equipamento Médico: interface de controle e comunicação direta com hardware de exames oculares, com segurança extrema no tráfego de dados de saúde',
-          'Sistema de Ordem de Serviços: arquitetura offline-first com banco de dados local para gestão de orçamentos sem internet',
-          'Plataforma para Associações Comerciais: full stack (Mobile + API) para comunicação entre associações, comerciantes e clientes',
+          'Atuação no ciclo completo de desenvolvimento: concepção, levantamento de requisitos com stakeholders, arquitetura e publicação nas lojas.',
+          'Gestão de Benefícios Pet: app com autenticação segura, módulos de pagamento/assinatura e sistema de solicitação de serviços, com monitoramento ativo de falhas.',
+          'Integração de Equipamento Médico: interface de controle para hardware de exames oculares com tratamento criterioso de dados sensíveis de saúde.',
+          'Sistema de Ordem de Serviços: arquitetura offline-first com banco de dados local para gestão de orçamentos em áreas sem cobertura de internet.',
+          'Plataforma para Associações Comerciais: desenvolvimento full stack (Mobile + API) para comunicação entre associações, comerciantes e clientes.',
         ],
-        techStack: ['React Native', 'TypeScript', 'Node.js', 'Offline-first', 'BLE/Hardware'],
+        techStack: ['React Native', 'TypeScript', 'Node.js', 'PostgreSQL', 'Offline-first', 'BLE/Hardware'],
         current: false,
       },
       {
@@ -150,11 +157,11 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
         role: 'Full Stack Developer',
         period: 'dez 2017 — mar 2020',
         description: [
-          'Desenvolvimento e manutenção de sistemas ERP legados para desktop em Delphi',
-          'Integração com base de dados Sybase, SQL Server e PostgreSQL',
-          'Desenvolvimento de relatórios gerenciais',
+          'Desenvolvimento e manutenção de sistemas ERP legados para desktop e mobile em Delphi e Sybase.',
+          'Otimização de aplicações para performance e escalabilidade em ambientes de produção.',
+          'Análise e correção de bugs críticos, garantindo a estabilidade do código em sistemas legados.',
         ],
-        techStack: ['Delphi', 'Sybase', 'SQL', 'PostgreSQL'],
+        techStack: ['Delphi', 'Sybase', 'SQL Server', 'PostgreSQL'],
         current: false,
       },
     ];
@@ -216,6 +223,25 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
       { id: '6', name: 'Clean Code', issuer: 'Rocketseat', year: 2023 },
       { id: '7', name: `Electron for Desktop Apps: The Complete Developer's Guide`, issuer: 'Udemy', year: 2022 },
       { id: '8', name: 'Curso de Design para Redes Sociais', issuer: 'Udemy', year: 2020 },
+    ];
+  }
+
+  getEducation(): Education[] {
+    return [
+      {
+        id: 'bsi',
+        name: 'Bacharelado em Tecnologia da Informação / Sistemas da Informação',
+        institution: 'Cruzeiro do Sul (EAD)',
+        period: 'jun/2026',
+        current: false,
+      },
+      {
+        id: 'ifg',
+        name: 'Ensino Técnico Integrado ao Ensino Médio — Informática',
+        institution: 'Instituto Federal de Goiás',
+        period: 'dez/2018',
+        current: false,
+      },
     ];
   }
 }

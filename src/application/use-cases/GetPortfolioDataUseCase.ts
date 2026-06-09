@@ -4,6 +4,7 @@ import type { Project } from '@/src/domain/entities/Project';
 import type { Experience } from '@/src/domain/entities/Experience';
 import type { Skill } from '@/src/domain/entities/Skill';
 import type { Certificate } from '@/src/domain/entities/Certificate';
+import type { Education } from '@/src/domain/entities/Education';
 
 export interface PortfolioData {
   profile: Profile;
@@ -11,6 +12,7 @@ export interface PortfolioData {
   experiences: Experience[];
   skills: Skill[];
   certificates: Certificate[];
+  education: Education[];
 }
 
 export class GetPortfolioDataUseCase {
@@ -23,6 +25,7 @@ export class GetPortfolioDataUseCase {
       experiences: this.repository.getExperiences(),
       skills: this.repository.getSkills(),
       certificates: this.repository.getCertificates(),
+      education: this.repository.getEducation(),
     };
   }
 }

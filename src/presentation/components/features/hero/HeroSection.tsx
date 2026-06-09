@@ -132,7 +132,7 @@ export function HeroSection({ profile }: Props) {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-6 text-base text-zinc-500 max-w-xl mx-auto leading-relaxed"
         >
-          {profile.bio}
+          {profile.bio.split('\n')[0]}
         </motion.p>
 
         <motion.div
